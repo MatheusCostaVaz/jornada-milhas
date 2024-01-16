@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
@@ -17,6 +18,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { BannerComponent } from './shared/banner/banner.component';
+import { BotaoControleComponent } from './shared/botao-controle/botao-controle.component';
 import { CardBuscaComponent } from './shared/card-busca/card-busca.component';
 import { CardDepoimentoComponent } from './shared/card-depoimento/card-depoimento.component';
 import { CardComponent } from './shared/card/card.component';
@@ -25,7 +27,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { FormBuscaComponent } from './shared/form-busca/form-busca.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { ModalComponent } from './shared/modal/modal.component';
-import { BotaoControleComponent } from './shared/botao-controle/botao-controle.component';
+import { PromocoesComponent } from './pages/home/promocoes/promocoes.component';
 
 
 @NgModule({
@@ -41,7 +43,8 @@ import { BotaoControleComponent } from './shared/botao-controle/botao-controle.c
     FormBuscaComponent,
     CardDepoimentoComponent,
     ModalComponent,
-    BotaoControleComponent
+    BotaoControleComponent,
+    PromocoesComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +60,8 @@ import { BotaoControleComponent } from './shared/botao-controle/botao-controle.c
     MatInputModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatDialogModule
+    MatDialogModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
